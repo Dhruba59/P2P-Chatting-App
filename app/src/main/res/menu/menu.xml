@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/notification"
+        android:title="Toggle Notification"
+        android:icon="@drawable/notification_on"
+        android:onClick="onNotificationClicked"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/darkMode"
+        android:title="Toggle Dark Mode"
+        android:icon="@drawable/light"
+        android:onClick="onDarkModeClicked"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/wifi"
+        android:title="Wifi"
+        android:icon="@drawable/wifi_on"
+        android:onClick="onWifiClicked"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/IP"
+        android:title="My IP"
+        android:onClick="onMyIPClicked"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/sendTextFile"
+        android:title="Send Text File"
+        android:onClick="onSendTextFileClicked"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/saveConversation"
+        android:title="Save Conversation"
+        android:onClick="onSaveConversationClicked"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/changeBackground"
+        android:title="Change Background"
+        app:showAsAction="never">
+        <menu>
+            <item
+                android:id="@+id/background1"
+                android:title="Background 1"
+                android:onClick="onChangeBackgroundClicked"
+                app:showAsAction="never" />
+
+            <item
+                android:id="@+id/background2"
+                android:title="Background 2"
+                android:onClick="onChangeBackgroundClicked"
+                app:showAsAction="never" />
+
+            <item
+                android:id="@+id/background3"
+                android:title="Background 3"
+                android:onClick="onChangeBackgroundClicked"
+                app:showAsAction="never" />
+
+            <item
+                android:id="@+id/background4"
+                android:title="Background 4"
+                android:onClick="onChangeBackgroundClicked"
+                app:showAsAction="never" />
+            <item
+                android:id="@+id/background5"
+                android:title="White"
+                android:onClick="onChangeBackgroundClicked"
+                app:showAsAction="never" />
+        </menu>
+    </item>
+</menu>
